@@ -1,4 +1,4 @@
-// Ashley Wright, Program Template, v0.03
+// Ashley Wright, Program Template, v0.04
 /*
 Generate secret number from a defined range of numbers.(ex. 0-10)
 Print game instructions including range and num. of guesses allowed.
@@ -62,11 +62,25 @@ namespace UPDATEFOREACHPROGRAM
                 rangeMax = 50;
                 numGuesses = 2;
             } else {
-
+                Console.WriteLine("No difficulty selected, defaulting  to Normal.\n")
+                rangeMin = 0;
+                rangeMax = 25;
+                numGuesses = 4;
             }
             Console.WriteLine("Minimum: " + rangeMin);
             Console.WriteLine("Maximum: " + rangeMax);
             Console.WriteLine("Num. Guesses: " + numGuesses);
+
+            // START THE MATCH!
+            while (playerScore != 3 && cpuScore != 3) {
+                // Any code that you want to run BEFORE each rouond goes here.
+                
+
+                // START EACH ROUND
+                for (int i = 0; i < numGuesses ; i++) {
+                    // Code to guess number goes here.
+                }
+            }
         }
     }
 }
