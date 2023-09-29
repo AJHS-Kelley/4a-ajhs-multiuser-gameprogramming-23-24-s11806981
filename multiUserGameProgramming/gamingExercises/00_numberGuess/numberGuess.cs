@@ -32,6 +32,7 @@ namespace UPDATEFOREACHPROGRAM
     {
         static void Main(string[] args)
         {
+            int secretNumber = -1;
             int hiddenNumber = -1;
             int numGuesses = 0; // Number of guesses player is ALLOWED.
             int numAttempts = 0; // Number of guesses TAKEN.
@@ -42,11 +43,11 @@ namespace UPDATEFOREACHPROGRAM
             int rangeMin = -1;
             int rangeMax = -1;
 
-            Console.WriteLine("Welcome to the Number Guess Game!\n You will select a difficulty next.\n")
-            Console.WriteLine("Easy Mode: Range is 0 - 10 with 4 guesses.\n Normal Mode: Range is 0 - 25 with 4 guesses.\n Hard Mode: Range is 0 - 50 with 2 guesses.")
+            Console.WriteLine("Welcome to the Number Guess Game!\n You will select a difficulty next.\n");
+            Console.WriteLine("Easy Mode: Range is 0 - 10 with 4 guesses.\n Normal Mode: Range is 0 - 25 with 4 guesses.\n Hard Mode: Range is 0 - 50 with 2 guesses.");
 
             // Difficulty Selection
-            Console.WriteLine("Please type Easy, Normal, or Hard and press enter.\n")
+            Console.WriteLine("Please type Easy, Normal, or Hard and press enter.\n");
             difficulty = Console.ReadLine();
             // Console.ReadLine() will save to STRING by default.
             Console.WriteLine("You have selected: " + difficulty);
@@ -63,7 +64,7 @@ namespace UPDATEFOREACHPROGRAM
                 rangeMax = 50;
                 numGuesses = 2;
             } else {
-                Console.WriteLine("No difficulty selected, defaulting  to Normal.\n")
+                Console.WriteLine("No difficulty selected, defaulting  to Normal.\n");
                 rangeMin = 0;
                 rangeMax = 25;
                 numGuesses = 4;
@@ -74,19 +75,43 @@ namespace UPDATEFOREACHPROGRAM
 
             // START THE MATCH!
             while (playerScore != 3 && cpuScore != 3) {
+
                 // Any code that you want to run BEFORE each rouond goes here.
                 // GENERATE SECRET NUMBER
                 Random rndNum = new Random();
                 secretNumber = rndNum.Next(rangeMin, rangeMax);
-                Console.WriteLine("Player Score: " + playerScore + \n);
-                
-
-
+                Console.WriteLine("Player Score: " + playerScore + "\n");
+                Console.WriteLine("CPU Score: " + cpuScore + "\n");
                 // START EACH ROUND
                 for (int i = 0; i < numGuesses ; i++) {
                     // Code to guess number goes here.
+                    Console.WriteLine("You have used " + numAttempts + " this round.\n");
+                    Console.WriteLine(" You must guess between " + rangeMin + " and " + rangeMax + "\n");
+                    playerGuess = System.Convert.ToInt32(Console.ReadLine());
+                    if (playerGuess == secretNumber) {
+                        Console.WriteLine("Well done!");
+                        playerScore++;
+                        break;
+                    } else {
+                        if (playerGuess > secretNumber) {
+                            Console.WriteLine("Your guess is too high!\n");
+                        } else {
+                            Console.WriteLine("Your guess is too low!\n");
+                        }
+                    }
+                    numAttempts++;
+                }
+                if(playerGuess != secretNumber) {
+                    cpuScore++;
+                    // Print a round lot message to the console.
                 }
             }
+            if (playerScore >= 3) {
+                Console.WriteLine("You have won the game!\n");
+            } else {
+                Console.WriteLine("You have lost the game!\n");
+            }
+        
         }
     }
 }
