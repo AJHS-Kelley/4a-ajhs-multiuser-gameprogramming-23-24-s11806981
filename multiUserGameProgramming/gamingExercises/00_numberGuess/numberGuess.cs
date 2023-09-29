@@ -35,6 +35,7 @@ namespace UPDATEFOREACHPROGRAM
             int hiddenNumber = -1;
             int numGuesses = 0; // Number of guesses player is ALLOWED.
             int numAttempts = 0; // Number of guesses TAKEN.
+            int playerGuess = 0;
             int playerScore = 0;
             int cpuScore = 0;
             string difficulty = "";
@@ -74,7 +75,12 @@ namespace UPDATEFOREACHPROGRAM
             // START THE MATCH!
             while (playerScore != 3 && cpuScore != 3) {
                 // Any code that you want to run BEFORE each rouond goes here.
+                // GENERATE SECRET NUMBER
+                Random rndNum = new Random();
+                secretNumber = rndNum.Next(rangeMin, rangeMax);
+                Console.WriteLine("Player Score: " + playerScore + \n);
                 
+
 
                 // START EACH ROUND
                 for (int i = 0; i < numGuesses ; i++) {
