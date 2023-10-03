@@ -1,4 +1,4 @@
-﻿// 02_Collections, Ashley Wright, 10/13/23 v0.1b
+﻿// 02_Collections, Ashley Wright, 10/13/23 v0.1c
 using System;
 
 namespace computer_science_exercises
@@ -34,9 +34,17 @@ namespace computer_science_exercises
             Console.WriteLine("GPA: \n" + String.Join(", ", GPA));
             Console.WriteLine();
 
-
-
-
+            /* Print Array Contents == Each Element on Seperate Line
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("breakfastFoods: \n" + String.Join("\n", breakfastFoods));
+            Console.WriteLine();
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("testScores: \n" + String.Join("\n", testScores));
+            Console.WriteLine();
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("GPA: \n" + String.Join("\n", GPA));
+            Console.WriteLine();
+            */
 
 
 
