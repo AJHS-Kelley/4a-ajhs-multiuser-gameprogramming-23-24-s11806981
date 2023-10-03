@@ -1,4 +1,4 @@
-﻿// 02_Collectioons, Ashley Wright, 10/13/23 v0.1a
+﻿// 02_Collections, Ashley Wright, 10/13/23 v0.1b
 using System;
 
 namespace computer_science_exercises
@@ -22,6 +22,24 @@ namespace computer_science_exercises
             string[] breakfastFoods = {"Bacon", "Waffles", "Pancakes", "Cereal", "Fruit"};
             int[] testScores = {95, 100, 25, 15, 27, 35};
             float[] GPA = {3.14f, 2.25f, 1.74f, 099f, 4.25f};
+
+            // Print Array Contents -- All Elements on Single Line
+            Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
+            Console.WriteLine();
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("testScores: \n" + String.Join(", ", testScores));
+            Console.WriteLine();
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("GPA: \n" + String.Join(", ", GPA));
+            Console.WriteLine();
+
+
+
+
+
+
+
         }
     }
 }
