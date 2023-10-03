@@ -1,4 +1,5 @@
-﻿using System;
+﻿// 02_Collectioons, Ashley Wright, 10/13/23 v0.0
+using System;
 
 namespace computer_science_exercises
 {
@@ -6,7 +7,7 @@ namespace computer_science_exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
