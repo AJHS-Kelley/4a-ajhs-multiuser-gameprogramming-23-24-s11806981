@@ -35,13 +35,13 @@ namespace computer_science_exercises
             Console.WriteLine();
 
             /* Print Array Contents == Each Element on Seperate Line
-             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("breakfastFoods: \n" + String.Join("\n", breakfastFoods));
             Console.WriteLine();
-             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("testScores: \n" + String.Join("\n", testScores));
             Console.WriteLine();
-             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("GPA: \n" + String.Join("\n", GPA));
             Console.WriteLine();
             */
@@ -59,7 +59,7 @@ namespace computer_science_exercises
             Console.WriteLine("GPA: " + GPA[0]);
 
             // Access Last Element
-             Console.WriteLine("The last element in each array is:\n");
+            Console.WriteLine("The last element in each array is:\n");
             Console.WriteLine("breakfastFoods: " + breakfastFoods[breakfastFoods.Length - 1]);
             Console.WriteLine("testScores: " + testScores[testScores.Length - 1]);
             Console.WriteLine("GPA: " + GPA[GPA.Length - 1]);
@@ -79,10 +79,10 @@ namespace computer_science_exercises
             Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
             Console.WriteLine();
-             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("testScores: \n" + String.Join(", ", testScores));
             Console.WriteLine();
-             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("GPA: \n" + String.Join(", ", GPA));
             Console.WriteLine();
 
@@ -93,14 +93,19 @@ namespace computer_science_exercises
             Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
             Console.WriteLine();
-             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("testScores: \n" + String.Join(", ", testScores));
             Console.WriteLine();
-             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("GPA: \n" + String.Join(", ", GPA));
             Console.WriteLine();
 
+            // Common Bugs working with arrays.
+            // Index Out of Bounds -- Accessing an element that does not exist.
+            // Console.WriteLine(breakfastFoods[4]); 
 
+            // Incorrect Data Type
+            // testScores[0] = "Billy"; // If possible, use the correct Convert.() If not possible, manually change to correct data type.
 
 
 
