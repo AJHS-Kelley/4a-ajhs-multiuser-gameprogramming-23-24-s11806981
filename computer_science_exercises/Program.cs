@@ -1,4 +1,4 @@
-﻿// 02_Collections, Ashley Wright, 10/13/23 v0.3a
+﻿// 02_Collections, Ashley Wright, 10/13/23 v0.3b
 using System;
 
 namespace computer_science_exercises
@@ -76,6 +76,20 @@ namespace computer_science_exercises
             breakfastFoods[0] = "Cake";
             testScores[0] = 59;
             GPA[0] = 1.34f;
+            Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
+            Console.WriteLine();
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("testScores: \n" + String.Join(", ", testScores));
+            Console.WriteLine();
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("GPA: \n" + String.Join(", ", GPA));
+            Console.WriteLine();
+
+            // PAUSE WRITE YOUR OWN CODE -- Update Fifth Element from Each Array
+            breakfastFoods[4] = "Yogurt";
+            testScores[4] = 0;
+            GPA[4] = 2.75f;
             Console.WriteLine(" The elements for each array are:\n");
             Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
             Console.WriteLine();
