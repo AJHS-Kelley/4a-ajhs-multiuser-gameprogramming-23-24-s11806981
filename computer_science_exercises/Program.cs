@@ -1,4 +1,4 @@
-﻿// 02_Collections, Ashley Wright, 10/13/23 v2.a
+﻿// 02_Collections, Ashley Wright, 10/13/23 v2.b
 using System;
 
 namespace computer_science_exercises
@@ -59,10 +59,18 @@ namespace computer_science_exercises
             Console.WriteLine("GPA: " + GPA[0]);
 
             // Access Last Element
-             Console.WriteLine("The first element in each array is:\n");
-            Console.WriteLine("breakfastFoods: " + breakfastFoods[breakfastFoods.length - 1]);
-            Console.WriteLine("testScores: " + testScores[testScores.length - 1]);
-            Console.WriteLine("GPA: " + GPA[GPA.length - 1]);
+             Console.WriteLine("The last element in each array is:\n");
+            Console.WriteLine("breakfastFoods: " + breakfastFoods[breakfastFoods.Length - 1]);
+            Console.WriteLine("testScores: " + testScores[testScores.Length - 1]);
+            Console.WriteLine("GPA: " + GPA[GPA.Length - 1]);
+
+            // PAUSE WRITE YOUR OWN CODE
+            //v0.2b -- Access the third element in each array and print to the screen.
+            Console.WriteLine("The third element in each array is:\n");
+            Console.WriteLine("breakfastFoods: " + breakfastFoods[2]);
+            Console.WriteLine("testScores: " + testScores[2]);
+            Console.WriteLine("GPA: " + GPA[2]);
+
 
 
 
