@@ -1,4 +1,4 @@
-﻿// 02_Collections, Ashley Wright, 10/13/23 v2.b
+﻿// 02_Collections, Ashley Wright, 10/13/23 v0.3a
 using System;
 
 namespace computer_science_exercises
@@ -21,7 +21,7 @@ namespace computer_science_exercises
             // Declaring and Defining an Array
             string[] breakfastFoods = {"Bacon", "Waffles", "Pancakes", "Cereal", "Fruit"};
             int[] testScores = {95, 100, 25, 15, 27, 35};
-            float[] GPA = {3.14f, 2.25f, 1.74f, 1.99f, 099f, 4.25f};
+            float[] GPA = {3.14f, 2.25f, 1.74f, 1.99f, 0.99f, 4.25f};
 
             // Print Array Contents -- All Elements on Single Line
             Console.WriteLine(" The elements for each array are:\n");
@@ -46,7 +46,7 @@ namespace computer_science_exercises
             Console.WriteLine();
             */
 
-            // Determing Array Length 
+            /* Determing Array Length 
             Console.WriteLine("The length of each array is:\n");
             Console.WriteLine("breakfastFoods: " + breakfastFoods.Length);
             Console.WriteLine("testScores: " + testScores.Length);
@@ -70,8 +70,21 @@ namespace computer_science_exercises
             Console.WriteLine("breakfastFoods: " + breakfastFoods[2]);
             Console.WriteLine("testScores: " + testScores[2]);
             Console.WriteLine("GPA: " + GPA[2]);
+            */
 
-
+            // Changing Array Elements --
+            breakfastFoods[0] = "Cake";
+            testScores[0] = 59;
+            GPA[0] = 1.34f;
+            Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
+            Console.WriteLine();
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("testScores: \n" + String.Join(", ", testScores));
+            Console.WriteLine();
+             Console.WriteLine(" The elements for each array are:\n");
+            Console.WriteLine("GPA: \n" + String.Join(", ", GPA));
+            Console.WriteLine();
 
 
 
