@@ -1,4 +1,4 @@
-// Ashley Wright, Program Template, v0.02
+// Ashley Wright, Program Template, v0.03
 using System;
 
 namespace MethodsParameters
@@ -34,11 +34,19 @@ namespace MethodsParameters
                 Console.WriteLine("One fluffy pancake coming up!\n");
             }
         }
+
+        static void MakeEggs(int num, string style)
+        {
+            Console.WriteLine("You have ordered " + num + " eggs cooked" + style + ".\n");
+        }
+
+
         static void Main(string[] args)
         {
             //MyMethod();
             //DoubleUp();
-            MakePancakes(2);
+            //MakePancakes(2);
+            MakeEggs(2, " sunny side up");
         }
     }
 }
