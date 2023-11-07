@@ -1,4 +1,4 @@
-// Ashley Wright, Program Template, v0.04
+// Ashley Wright, Program Template, v0.05
 using System;
 
 namespace MethodsParameters
@@ -49,6 +49,19 @@ namespace MethodsParameters
         {
             Console.WriteLine("My favorite child is " + child3);
         }
+        // METHOD OVERLOADING
+        static int FindSum(int x, int y)
+        {
+            int sum = x + y;
+            Console.WriteLine("Sum: " + sum); 
+            return sum;
+        }
+        static double FindSum(double x, double y)
+        {
+            double sum = x + y;
+            Console.WriteLine("Sum: " + sum); 
+            return sum;
+        }
         static void Main(string[] args)
         {
             //MyMethod();
@@ -58,6 +71,9 @@ namespace MethodsParameters
             //MakeBurger();
             //MakeBurger(10);
             //AllMyChildren(child3: "Steve", child2: "Susan", child1: "Ahh");
+            FindSum(1, 8);
+            FindSum(1.34, 1.0);
+            FindSum(4, 2.3);
         }
     }
 }
