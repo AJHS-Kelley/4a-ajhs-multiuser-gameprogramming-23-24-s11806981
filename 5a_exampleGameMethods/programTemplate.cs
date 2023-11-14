@@ -1,80 +1,32 @@
-// Ashley Wright, Program Template, v0.05
+// Ashley Wright, Program Template, v0.1
 // All required examples provided. 
 using System;
 
-namespace MethodsParameters
+namespace UPDATEFOREACHPROGRAM
 {
-    class MethodsParameters
+    class UPDATEFOREACHPROGRAM
     {
-        // METHOD -- name block of code, can be used over and over.
-        // All methods have a SIGNATURE that defines their name, parameters, and output.
-        // Example Signature
-        static void MyMethod()
+        //Making Pancakes Game
+        //Steps(Methods) 1: Grocery Run 2: Gather Ingredients 3: Mix ingredients 4: Make Pancakes
+        static void MethodOne()
         {
-            Console.WriteLine("cookies for breakfast.\n");
-        }
-        // static -- This method belongs to the current class, it is NOT an object.
-        //void -- This method has no return value.
 
-        static int DoubleUp()
+        }
+        static void MethodTwo()
         {
-            int sum = 0;
-            Console.WriteLine("This method will double a number and return it.\n");
-            Console.WriteLine("Please enter a number on the next line.\n");
-            sum = System.Convert.ToInt32(Console.ReadLine());
-            sum *= 2;
-            Console.WriteLine(sum);
-            return sum; 
+
+        }
+        static void MethodThree()
+        {
+
+        }
+        static void MethodFour()
+        {
+
         }
 
-        // Methods with Parameters
-        static void MakePancakes(int num)
-        {
-            for (int i = 0; i < num; i++) 
-            {
-                Console.WriteLine("One fluffy pancake coming up!\n");
-            }
-        }
 
-        static void MakeEggs(int num, string style)
-        {
-            Console.WriteLine("You have ordered " + num + " eggs cooked" + style + ".\n");
-        }
-        // Using Defaults for Parameters
-        static void MakeBurger(int num = 1)
-        {
-            Console.WriteLine("Im going to cook " + num + " hamburgers.\n");
-        }
-        // Named Arguements
-        static void AllMyChildren(string child1, string child2, string child3)
-        {
-            Console.WriteLine("My favorite child is " + child3);
-        }
-        // METHOD OVERLOADING
-        static int FindSum(int x, int y)
-        {
-            int sum = x + y;
-            Console.WriteLine("Sum: " + sum); 
-            return sum;
-        }
-        static double FindSum(double x, double y)
-        {
-            double sum = x + y;
-            Console.WriteLine("Sum: " + sum); 
-            return sum;
-        }
-        static void Main(string[] args)
-        {
-            //MyMethod();
-            //DoubleUp();
-            //MakePancakes(2);
-            //MakeEggs(2, " sunny side up");
-            //MakeBurger();
-            //MakeBurger(10);
-            //AllMyChildren(child3: "Steve", child2: "Susan", child1: "Ahh");
-            FindSum(1, 8);
-            FindSum(1.34, 1.0);
-            FindSum(4, 2.3);
+
         }
     }
 }
