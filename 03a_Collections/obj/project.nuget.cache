@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tMa8tY/KVMqVaN2XWBeeBzc8h6KQwy6hOosPc/NroPULf/cjMjlxQo3LppHBNOCkpSKJr2YgKCxTg5+AwFuDfQ==",
+  "dgSpecHash": "rAAjOaFlwPvQzv1v4/ACvpgHR0cngbETOAONm6RrX7Y8w7DyfHW+FqyREv4qqMi+iVWVQ+7TKFgxjrNW2kabyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\s11806981\\Downloads\\4a-ajhs-multiuser-gameprogramming-23-24-s11806981\\computer_science_exercises\\02_Collections\\02_Collections.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\isaia\\Downloads\\School Things\\4a-ajhs-multiuser-gameprogramming-23-24-ZarielBarragen-main\\4a-ajhs-multiuser-gameprogramming-23-24-s11806981\\03a_Collections\\02_Collections.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isaia\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\isaia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\isaia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\isaia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
