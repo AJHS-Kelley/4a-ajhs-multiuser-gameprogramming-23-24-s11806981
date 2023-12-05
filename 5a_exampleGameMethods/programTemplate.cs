@@ -1,26 +1,37 @@
 // Ashley Wright, Program Template, v0.1
 // All required examples provided. 
 using System;
-
-namespace UPDATEFOREACHPROGRAM
+using System.Collections;
+namespace PancakeGame
 {
-    class UPDATEFOREACHPROGRAM
+    class PancakeGame
     {
         //Making Pancakes Game
-        //Steps(Methods) 1: Grocery Run 2: Gather Ingredients 3: Mix ingredients 4: Make Pancakes
-        static void MethodOne()
+        //Steps(Methods) 1: Mix ingredients 2: Make Pancakes
+        static int MakePancakes()
+        {
+            int PancakeAmount = 4;
+        Console.WriteLine("Today we're making pancakes! ");
+        }
+        static bool MethodTwo()
         {
 
         }
-        static void MethodTwo()
+        static string PancakeFlavor()
         {
-
-        }
-        static void MethodThree()
+        var PancakeFlavors = new ArrayList()
         {
-
+            "Plain", "Chocolate", "Strawberry", "Blueberry"
+        };
+        Console.WriteLine("These are the available flavors: \n");
+        foreach (var item in PancakeFlavors)
+            {
+                Console.WriteLine(item);
+            }
+        Console.WriteLine("Please choose a flavor!");
+        
         }
-        static void MethodFour()
+        static float MethodFou()
         {
 
         }
@@ -29,6 +40,6 @@ namespace UPDATEFOREACHPROGRAM
 
         }
     }
-}
+
 
 // Code Review by Isaiah Reyes
