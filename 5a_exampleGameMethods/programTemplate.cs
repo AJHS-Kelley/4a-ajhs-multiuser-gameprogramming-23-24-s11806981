@@ -18,6 +18,8 @@ namespace PancakeGame
         { 
             bool IsFluffy = true;
             Console.WriteLine("Would you like Fluffy Pancakes?");
+            string FluffyOrThin = Convert.ToString(Console.ReadLine);
+            if (FluffyOrThin == "yes");
         }
         static string PancakeFlavor()
         {
