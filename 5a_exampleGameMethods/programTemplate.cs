@@ -1,4 +1,4 @@
-// Ashley Wright, Program Template, v0.1
+// Ashley Wright, Program Template, v0.2
 // All required examples provided. 
 using System;
 using System.Collections;
@@ -12,10 +12,12 @@ namespace PancakeGame
         {
             int PancakeAmount = 4;
         Console.WriteLine("Today we're making pancakes! ");
+        return PancakeAmount;
         }
-        static bool MethodTwo()
-        {
-
+        static bool FluffyOrThin()
+        { 
+            bool IsFluffy = true;
+            Console.WriteLine("Would you like Fluffy Pancakes?");
         }
         static string PancakeFlavor()
         {
@@ -29,7 +31,8 @@ namespace PancakeGame
                 Console.WriteLine(item);
             }
         Console.WriteLine("Please choose a flavor!");
-        
+        string FlavorChoice = Convert.ToString(Console.ReadLine);
+        // Ask Mr. Kelly how to select item on the list
         }
         static float MethodFou()
         {
