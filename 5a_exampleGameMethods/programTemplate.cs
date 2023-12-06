@@ -1,4 +1,4 @@
-// Ashley Wright, Program Template, v0.2
+// Ashley Wright, Program Template, v0.4
 // All required examples provided. 
 using System;
 using System.Collections;
@@ -15,11 +15,20 @@ namespace PancakeGame
         return PancakeAmount;
         }
         static bool FluffyOrThin()
+        // Player gets to decide whether they want fluffy or thin pancakes.
         { 
             bool IsFluffy = true;
-            Console.WriteLine("Would you like Fluffy Pancakes?");
-            string FluffyOrThin = Convert.ToString(Console.ReadLine);
-            if (FluffyOrThin == "yes");
+            Console.WriteLine("Would you like Fluffy  or Thin Pancakes?");
+            string FluffyOrThin = Convert.ToString(Console.ReadLine());
+            //Get Mr.Kelly to help with the response lowercase or uppercase
+            if (FluffyOrThin == "fluffy"); {
+                IsFluffy = true;
+                Console.WriteLine("Fluffy pancakes it is! \n");
+            } else (FluffyOrThin == "thin") {
+                IsFluffy = false;
+                Console.WriteLine("No? Okay! Thin pancakes it is! \n");
+            }
+            return IsFluffy;
         }
         static string PancakeFlavor()
         {
