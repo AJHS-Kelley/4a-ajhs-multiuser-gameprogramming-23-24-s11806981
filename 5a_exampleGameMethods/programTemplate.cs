@@ -1,4 +1,4 @@
-// Ashley Wright, Program Template, v0.4
+// Ashley Wright, Program Template, v0.5
 // All required examples provided. 
 using System;
 using System.Collections;
@@ -32,6 +32,7 @@ namespace PancakeGame
         }
         static string PancakeFlavor()
         {
+            Console.WriteLine("Now, moving on to the pancake flavors! \n");
         var PancakeFlavors = new ArrayList()
         {
             "Plain", "Chocolate", "Strawberry", "Blueberry"
@@ -42,6 +43,14 @@ namespace PancakeGame
                 Console.WriteLine(item);
             }
         Console.WriteLine("Please choose a flavor!");
+        if (FlavorChoice == "Plain")
+        {
+            Console.WriteLine("Alright, we don't need any extra ingredients.");
+        } else if (FlavorChoice == "Chocolate")
+        {
+            Console.WriteLine("");
+        }
+        return "mo";
         string FlavorChoice = Convert.ToString(Console.ReadLine);
         // Ask Mr. Kelly how to select item on the list
         }
