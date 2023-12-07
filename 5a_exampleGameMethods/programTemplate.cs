@@ -14,28 +14,32 @@ namespace PancakeGame
         Console.WriteLine("Today we're making pancakes! ");
         return PancakeAmount;
         }
+        
         static bool FluffyOrThin()
         // Player gets to decide whether they want fluffy or thin pancakes.
         { 
             bool IsFluffy = true;
             Console.WriteLine("Would you like Fluffy  or Thin Pancakes?");
-            string FluffyOrThin = Convert.ToString(Console.ReadLine());
+            string FluffyOrThin = Convert.ToString(Console.ReadLine().ToLower());
+            Console.WriteLine(FluffyOrThin.ToLower()); 
             //Get Mr.Kelly to help with the response lowercase or uppercase
-            if (FluffyOrThin == "fluffy"); {
+            if (FluffyOrThin == "fluffy")  
+            {
                 IsFluffy = true;
                 Console.WriteLine("Fluffy pancakes it is! \n");
-            } else (FluffyOrThin == "thin") {
+            } else {
                 IsFluffy = false;
                 Console.WriteLine("No? Okay! Thin pancakes it is! \n");
             }
             return IsFluffy;
         }
+
         static string PancakeFlavor()
         {
             Console.WriteLine("Now, moving on to the pancake flavors! \n");
         var PancakeFlavors = new ArrayList()
         {
-            "Plain", "Chocolate", "Strawberry", "Blueberry"
+            "Plain", "Chocolate", "Strawberry", "Blueberry", "Bacon"
         };
         Console.WriteLine("These are the available flavors: \n");
         foreach (var item in PancakeFlavors)
@@ -45,24 +49,38 @@ namespace PancakeGame
         Console.WriteLine("Please choose a flavor!");
         if (FlavorChoice == "Plain")
         {
-            Console.WriteLine("Alright, we don't need any extra ingredients.");
-        } else if (FlavorChoice == "Chocolate")
-        {
+            Console.WriteLine("Alright ");
+        } else if (FlavorChoice == "Chocolate") {
             Console.WriteLine("");
-        }
+        } else if (FlavorChoice == "Strawberry") {
+            Console.WriteLine("");
+        } else if (FlavorChoice == "Blueberry") {
+            Console.WriteLine("");
+        } else if (FlavorChoice == "Bacon") {
+            Console.WriteLine("");
+
+            
         return "mo";
         string FlavorChoice = Convert.ToString(Console.ReadLine);
-        // Ask Mr. Kelly how to select item on the list
         }
-        static float MethodFou()
+        
+        static float IngredientsPrice()
         {
+            float Plain = 10.00f;
+            float Chocolate = 12.50f;
+            float Blueberry = 14.75f;
+            float Strawberry = 16.65f;
+            float Bacon = 20.80f;
 
         }
 
 
 
         }
+    
     }
+}
+
 
 
 // Code Review by Isaiah Reyes
