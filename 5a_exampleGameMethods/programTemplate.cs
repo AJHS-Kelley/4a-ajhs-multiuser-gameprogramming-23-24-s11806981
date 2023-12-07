@@ -36,6 +36,7 @@ namespace PancakeGame
 
         static string PancakeFlavor()
         {
+            string FlavorChoice = "";
             Console.WriteLine("Now, moving on to the pancake flavors! \n");
             var PancakeFlavors = new ArrayList()
             {
@@ -58,20 +59,28 @@ namespace PancakeGame
             Console.WriteLine("");
             } else if (FlavorChoice == "Bacon") {
             Console.WriteLine("");
-            string FlavorChoice = Convert.ToString(Console.ReadLine);
             }
             return FlavorChoice;
         }        
         static float IngredientsPrice()
         {
             Console.WriteLine("Here are the prices (We have them covered so choose at your leisure)");
-            float Plain = 10.00f;
+            // int basePrice = 1;
+            // float regularPancake = 0.25f; 
+            // float fancyPancake = 1.25f; 
+            float cost = 0.0f; 
             float Chocolate = 12.50f;
             float Blueberry = 14.75f;
             float Strawberry = 16.65f;
             float Bacon = 20.80f;
+            // if (PancakeFlavor == "Plain")
+            // { 
+            //     cost = basePrice * Plain * numPanackes;
+            // }
+            return cost; 
         }
         
+    
         static void Main(string[] args)
         {
         MakePancakes();
