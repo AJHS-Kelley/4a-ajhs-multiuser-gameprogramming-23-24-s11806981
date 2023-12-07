@@ -37,49 +37,55 @@ namespace PancakeGame
         static string PancakeFlavor()
         {
             Console.WriteLine("Now, moving on to the pancake flavors! \n");
-        var PancakeFlavors = new ArrayList()
-        {
+            var PancakeFlavors = new ArrayList()
+            {
             "Plain", "Chocolate", "Strawberry", "Blueberry", "Bacon"
-        };
-        Console.WriteLine("These are the available flavors: \n");
-        foreach (var item in PancakeFlavors)
+            };
+            Console.WriteLine("These are the available flavors: \n");
+            foreach (var item in PancakeFlavors)
             {
                 Console.WriteLine(item);
             }
-        Console.WriteLine("Please choose a flavor!");
-        if (FlavorChoice == "Plain")
-        {
+            Console.WriteLine("Please choose a flavor!");
+            if (FlavorChoice == "Plain")
+            {
             Console.WriteLine("Alright ");
-        } else if (FlavorChoice == "Chocolate") {
+            } else if (FlavorChoice == "Chocolate") {
             Console.WriteLine("");
-        } else if (FlavorChoice == "Strawberry") {
+            } else if (FlavorChoice == "Strawberry") {
             Console.WriteLine("");
-        } else if (FlavorChoice == "Blueberry") {
+            } else if (FlavorChoice == "Blueberry") {
             Console.WriteLine("");
-        } else if (FlavorChoice == "Bacon") {
+            } else if (FlavorChoice == "Bacon") {
             Console.WriteLine("");
-
-            
-        return "mo";
-        string FlavorChoice = Convert.ToString(Console.ReadLine);
-        }
-        
+            string FlavorChoice = Convert.ToString(Console.ReadLine);
+            }
+            return FlavorChoice;
+        }        
         static float IngredientsPrice()
         {
+            Console.WriteLine("Here are the prices (We have them covered so choose at your leisure)");
             float Plain = 10.00f;
             float Chocolate = 12.50f;
             float Blueberry = 14.75f;
             float Strawberry = 16.65f;
             float Bacon = 20.80f;
-
         }
-
-
-
+        
+        static void Main(string[] args)
+        {
+        MakePancakes();
+        FluffyOrThin();
+        PancakeFlavor();
+        IngredientsPrice();
         }
+        
+        
+    }  
     
-    }
 }
+
+
 
 
 
