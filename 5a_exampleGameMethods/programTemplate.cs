@@ -68,14 +68,18 @@ namespace PancakeGame
             // float regularPancake = 0.25f; 
             // float fancyPancake = 1.25f; 
             // Use price as the final price for t he pancakes. 
-            float cost = 0.0f; // change to Plain 
+            float Plain = 7.00f; // change to Plain 
             float Chocolate = 12.50f;
             float Blueberry = 14.75f;
             float Strawberry = 16.65f;
             float Bacon = 20.80f;
-            Console.WriteLine("Plain Pancakes are $" + cost + ".");
+            Console.WriteLine("Plain Pancakes are $" + Plain + ".");
+            Console.WriteLine("Plain Pancakes are $" + Chocolate + ".");
+            Console.WriteLine("Plain Pancakes are $" + Blueberry + ".");
+            Console.WriteLine("Plain Pancakes are $" + Strawberry + ".");
+            Console.WriteLine("Plain Pancakes are $" + Bacon + ".");
             Console.WriteLine("Please choose a flavor!");
-            return cost; 
+            return IngredientsPrice; 
         }
         
     
