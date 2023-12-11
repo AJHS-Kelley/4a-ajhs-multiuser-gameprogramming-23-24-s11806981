@@ -47,7 +47,6 @@ namespace PancakeGame
             {
                 Console.WriteLine(item);
             }
-            Console.WriteLine("Please choose a flavor!");
             if (FlavorChoice == "Plain")
             {
             Console.WriteLine("Alright ");
@@ -64,7 +63,7 @@ namespace PancakeGame
         }        
         static float IngredientsPrice()
         {
-            Console.WriteLine("Here are the prices (We have them covered so choose at your leisure)");
+            Console.WriteLine("Here are the flavor prices : \n");
             // int basePrice = 1;
             // float regularPancake = 0.25f; 
             // float fancyPancake = 1.25f; 
@@ -77,6 +76,7 @@ namespace PancakeGame
             // { 
             //     cost = basePrice * Plain * numPanackes;
             // }
+             Console.WriteLine("Please choose a flavor!");
             return cost; 
         }
         
